@@ -116,7 +116,7 @@ public class Application implements CommandLineRunner {
         System.out.println("Paginated search of todo by responsible:");
         System.out.println("-------------------------------");
 
-        todoRepository.findByResponsible("Sergio Nuñez", PageRequest.of(0, 2)).stream()
+        todoRepository.findByResponsible("Sergio Nuñez", PageRequest.of(0, 4)).stream()
                 .forEach(System.out::println);
 
         System.out.println("-------------------------------");
