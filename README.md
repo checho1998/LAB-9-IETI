@@ -59,6 +59,9 @@ Create a Spring Boot Application that connects with MongoDB.
 6. Run the project and verify that the connection to the database works properly. Answer the following questions:
 
 - How many customers were created in the database?
+
+![Imagenes](https://github.com/checho1998/LAB-9-IETI/blob/main/Imagenes/usuarios.PNG)
+
 - Where is the *findAll* method implemented?
 - Suppose you have more than 1000 products in your database. How would you implement a method for supporting pagination and return pages of 50 products to your frontend?
 - How many products contain the "plus" word in their description?
