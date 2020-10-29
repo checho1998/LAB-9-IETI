@@ -59,11 +59,24 @@ Create a Spring Boot Application that connects with MongoDB.
 6. Run the project and verify that the connection to the database works properly. Answer the following questions:
 
 - How many customers were created in the database?
+
+![Imagenes](https://github.com/checho1998/LAB-9-IETI/blob/main/Imagenes/usuarios.PNG)
+
 - Where is the *findAll* method implemented?
-- Suppose you have more than 1000 products in your database. How would you implement a method for supporting pagination and return pages of 50 products to your frontend?
-- How many products contain the "plus" word in their description?
-- How many products are returned by the *findByDescriptionContaining* query? Why?
+
+ ya que poseemos una interfaz que extiende de MongoReository y es alli donde se encuentra el metodo implementado *findAll*.
+
+- How many products contain the "plus" word in their description? 
+
+ en la Base de datos se encuentran 4 productos que contienen la palabra "Plus" en su respectiva descripcion. 
+
 - Which are the collection names where the objects are stored? Where are those names assigned?
+
+Se encuentran dos Collections en la base de datos customer y product.
+
+Gracias a la anotacion @Document el nombre es asignado
+
+![Imagenes](https://github.com/checho1998/LAB-9-IETI/blob/main/Imagenes/collections.PNG)
 
 5. Create two more models (User and Todo) with the following structure:
 
@@ -171,4 +184,13 @@ Create a Spring Boot Application that connects with MongoDB.
     * Users that have assigned more than 2 Todos.
     * Todos that contains a description with a length greater than 30 characters        
 
-8. Implement the queries of the previous step using *derived query methods* in your repository interface. Is it possible to implement all of them?
+
+### Codigo de Honor
+
+Debes seguir el Código de honor del ingeniero de sistemas para defender el estándar de integridad académica de la ECI:
+
+- Tus respuestas a tareas, cuestionarios y exámenes deben ser tu propio trabajo (excepto para las tareas que permiten explícitamente la colaboración).
+
+- No puedes compartir tus soluciones de tareas, cuestionarios o exámenes con otra persona a menos que el instructor lo permita explícitamente. Esto incluye cualquier cosa escrita por ti, como también cualquier solución oficial proporcionada por el docente o el monitor del curso.
+
+- No puedes participar en otras actividades que mejorarán de manera deshonesta tus resultados o que mejorarán de manera deshonesta o dañarán los resultados de otras personas.
