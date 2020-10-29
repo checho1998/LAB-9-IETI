@@ -4,6 +4,9 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 import java.util.Date;
 
+/**
+ * checho
+ */
 
 @Document
 public class Todo {
@@ -15,6 +18,16 @@ public class Todo {
     private Date dueDate;
     private String responsible;
     private String status;
+
+    /**
+     *
+     * @param id
+     * @param description
+     * @param priority
+     * @param dueDate
+     * @param responsible
+     * @param status
+     */
 
     public Todo(Long id, String description, int priority, Date dueDate, String responsible, String status) {
         this.id = id;
